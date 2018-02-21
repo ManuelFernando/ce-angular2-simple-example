@@ -2,9 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ChatEngine } from './chatengine';
 
-
 import { AppComponent } from './app.component';
-
 
 @NgModule({
   declarations: [
