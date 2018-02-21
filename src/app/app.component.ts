@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatEngineCore } from 'chat-engine';
 import { ChatEngine } from './chatEngine';
 declare var require: any;
 const random = require('chat-engine-random-username');
 const search = require('chat-engine-online-user-search');
-
-// console.log(search);
 
 @Component({
   selector: 'app-root',
