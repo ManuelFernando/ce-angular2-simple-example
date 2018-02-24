@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">ChatEngine</h4>
+    <p class="card-text">Your are connected with uuid {{ce.me.uuid}}</p>
+    <ul id="online-list" class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let user of getUsers(ce.chat.users)">
+        <a href="">{{user.uuid}}</a>
+      </li>
+    </ul>
+</div>
