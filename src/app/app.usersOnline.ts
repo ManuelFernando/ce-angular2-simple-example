@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {ChatEngine} from './chatEngine';
+import { Component } from '@angular/core';
+import { ChatEngine } from './chatEngine';
 
 @Component({
   selector: 'app-usersOnline',
