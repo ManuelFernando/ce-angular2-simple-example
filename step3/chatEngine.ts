@@ -6,7 +6,7 @@ export class ChatEngine {
   instance: any;
   create: any;
   plugin: any;
-  me: any;
+  me: any = { state: {} };
   constructor() {
     ...
   }

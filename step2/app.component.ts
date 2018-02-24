@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatEngine } from './chatengine';
+import { ChatEngine } from './chatEngine';
 
 @Component({
   selector: 'app-root',
