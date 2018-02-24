@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
-    "chat-engine": "^0.8.4",
+    "chat-engine": "^0.9.3",
     "chat-engine-online-user-search": "0.0.10",
     "chat-engine-random-username": "0.0.5",
     "chat-engine-typing-indicator": "0.0.9",
