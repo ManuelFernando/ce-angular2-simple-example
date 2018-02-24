@@ -1,0 +1,20 @@
+<div class="chat col-xs-12">
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-sm-11">
+          {{chat.channel}}
+        </div>
+        <div class="col-sm-1 text-right">
+        </div>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush online-list-sub">
+      <li class="list-group-item" *ngFor="let user of getUsers(chat.users)">
+        {{user.state.username}}
+      </li>
+    </ul>
+    <div class="card-body">
+    </div>
+  </div>
+</div>
