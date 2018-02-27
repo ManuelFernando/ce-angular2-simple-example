@@ -1,0 +1,21 @@
+<div class="chat col-xs-12">
+  <div class="card">
+    ...
+    <div class="card-body">
+      <div>
+        <div *ngFor="let message of messages" [ngClass]="{'text-right': !message.isSelf}">
+          <p class="text-muted" [ngClass]="{'d-none': message.sameUser}">{{message.sender.state.username}}</p>
+          <p>{{message.data.text}}</p>
+        </div>
+      </div>
+      <div>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Your Message..." [(ngModel)]="message">
+          <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit" (click)="send()">Send</button>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
