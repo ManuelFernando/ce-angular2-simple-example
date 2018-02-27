@@ -1,0 +1,28 @@
+<div class="chat col-xs-12">
+  <div class="card">
+    <div class="card-header">
+      ...
+    </div>
+    <ul class="list-group list-group-flush online-list-sub">
+      ...
+    </ul>
+    <div class="card-body">
+      ...
+      <hr/>
+      <div class="card-body">
+        <h6>Add a user to this chat</h6>
+        <div ng-submit="searchFromGlobal()">
+          <div class="input-group">
+            <input type="text" class="form-control message"
+                   placeholder="Add User" (ngModelChange)="search()" [(ngModel)]="mysearch"/>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush online-list-sub">
+          <li class="list-group-item" *ngFor="let user of users">
+            <a href="" (click)="invite(user)">{{user.state.username}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
