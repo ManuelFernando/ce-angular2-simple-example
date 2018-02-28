@@ -1,7 +1,5 @@
 import {Component, Input, OnInit } from '@angular/core';
 import {ChatEngine} from './chatEngine';
-declare var require: any;
-const typing = require('chat-engine-typing-indicator');
 
 @Component({
   selector: 'app-chat',
