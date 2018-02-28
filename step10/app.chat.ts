@@ -13,7 +13,6 @@ export class AppChatComponent implements OnInit {
   messages: any[] = [];
   message: string;
   mysearch: string = '';
-  users: any[] = [];
 
   constructor(private chatEngine: ChatEngine) {
     this.ce = chatEngine;
